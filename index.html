@@ -1,20 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="lemonade">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Check</title>
-    <script src="src/js/main.js"></script>
+    <title>Pokemon</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/js/main.js"></script>
+    <style>
+      h1,
+      #list-pokemon {
+        font-family: "Press Start 2P", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <div id="header" style=" background-color: darkolivegreen;">
-        <h1 id="title-1" style="text-align: center; font-size: xx-large; color: white;">Weather Dahsboard</h1>   
+    <div class="flex items-stretch bg-grey-lighter min-h-screen">
+      <div
+        class="flex-1 text-grey-darker text-center bg-sky-900 px-4 py-2 m-12 bg-stone-700 rounded-xl drop-shadow-xl"
+      >
+        <h1 class="text-4xl text-color mt-4 text-secondary drop-shadow-lg">
+          Pokemon
+        </h1>
+        <div id="list-pokemon" class="gap-2 mt-6 overflow-auto"></div>
+      </div>
+      <div
+        class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-12 bg-stone-700 rounded-xl drop-shadow-xl"
+      >
+        <h1 class="text-4xl text-color mt-4 text-secondary drop-shadow-lg">
+          Caterpie
+        </h1>
+        <div class="relative inset-0 flex">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
+            class="m-auto"
+            height="300"
+            width="300"
+            alt="gfg"
+          />
+        </div>
+        <div class="">
+          <div class="badge badge-secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-4 w-4 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+            secondary
+          </div>
+        </div>
+
+
+        <div class="">
+          <div class="badge badge-secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-4 w-4 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+            secondary
+          </div>
+        </div>
+        <div class="">
+          <div class="badge badge-secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-4 w-4 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+            secondary
+          </div>
+        </div>
+        <div class="">
+          <div class="badge badge-secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block h-4 w-4 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+            secondary
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="text-placeholder"> </div>
-    <script>
-        window.onload = function(){
-            document.getElementById("text-placeholder").innerHTML = getName("Pradana")
-        }
-    </script>
   </body>
 </html>

@@ -1,3 +1,10 @@
-const myArray = ['Android', 'Data Science', 'Web'];
-myArray.splice(1, 1);
-console.log(myArray); // Outp
+import {getPokemonList} from './getPokemon.js'
+
+
+window.onload = async function(){
+    const dataPokemon = await getPokemonList()
+    
+    
+    
+}
+

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "url-join": "^5.0.0"
+  },
+  "type": "module"
+}

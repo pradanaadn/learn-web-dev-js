@@ -1,2 +1,4 @@
 .zed
 .vscode
+.env
+node_modules
